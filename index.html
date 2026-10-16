@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VoxelCraft — Mundo de bloques</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div id="game"></div>
+  <div id="overlay">
+    <div class="top-left panel">
+      <strong>VOXELCRAFT</strong>
+      <span>Supervivencia creativa</span>
+    </div>
+    <div class="help panel" id="help">
+      <b>CONTROLES</b><br>
+      WASD: moverte · Ratón: mirar<br>
+      Clic: romper bloque · Shift + clic: colocar<br>
+      1–5: elegir bloque · Espacio: saltar · Esc: liberar ratón
+    </div>
+    <div class="crosshair">+</div>
+    <div class="bottom">
+      <div class="status"><span id="message">¡Explora y construye!</span><span id="coords">X: 0 Z: 0</span></div>
+      <div id="hotbar"></div>
+    </div>
+    <div id="start" class="modal">
+      <div class="modal-card">
+        <div class="eyebrow">UN MUNDO HECHO DE CUBOS</div>
+        <h1>VOXEL<span>CRAFT</span></h1>
+        <p>Explora un paisaje de bloques, rompe materiales y construye tu propio refugio.</p>
+        <button id="play">JUGAR</button>
+        <small>Se recomienda usar ordenador y navegador moderno.</small>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="game.js"></script>
+</body>
+</html>
